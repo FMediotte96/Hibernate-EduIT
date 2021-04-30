@@ -1,24 +1,21 @@
 package educacionit.jpa;
 
+import educacionit.jpa.dao.PersonaDAO;
 import educacionit.jpa.dao.ProductoDAO;
+import educacionit.jpa.entidades.Persona;
 import educacionit.jpa.entidades.Producto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
-
-import educacionit.jpa.dao.PersonaDAO;
-import educacionit.jpa.entidades.Persona;
 
 import java.util.Date;
 
 @SpringBootApplication
-//@EntityScan( basePackages = {"educacionit.jpa"} )
 public class JpaApplication implements CommandLineRunner {
 
-    PersonaDAO personaDAO;
-    ProductoDAO productoDAO;
+    private final PersonaDAO personaDAO;
+    private final ProductoDAO productoDAO;
 
     @Autowired
     public JpaApplication(PersonaDAO personaDAO, ProductoDAO productoDAO) {
