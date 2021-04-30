@@ -1,2 +1,4 @@
 # Java-Hibernate
-Curso Java HIbernate Educación It
+Curso Java Hibernate Educación It
+
+Link: https://www.educacionit.com/curso-de-java-hibernate-j2ee
